@@ -1,0 +1,123 @@
+
+.social {
+    position: relative;
+    height: 2.5em;
+    width: 13.5em;
+    margin: 50px 450px;
+}
+
+.social li {
+    display: block;
+    height: 4em;
+    line-height: 4em;
+    margin: -2.2em;
+    position: absolute;
+    -webkit-transition: -webkit-transform .7s;
+    -moz-transition: -moz-transform .7s;
+    -ms-transition: -ms-transform .7s;
+    -o-transition: -o-transform .7s;
+    transition: transform .7s;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    text-align: center;
+    width: 4em;
+
+}
+
+.social a {
+    color: #fffdf0;
+    display: block;
+    height: 4em;
+    line-height: 6em;
+    text-align: center;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 4em;
+
+}
+
+.social li:hover {
+    -webkit-transform: scale(1.3,1.3) rotate(45deg);
+    -moz-transform: scale(1.3,1.3) rotate(45deg);
+    -ms-transform: scale(1.3,1.3) rotate(45deg);
+    -o-transform: scale(1.3,1.3) rotate(45deg);
+    transform: scale(1.3,1.3) rotate(45deg);
+}
+
+.facebook {
+    background: #155b9d;
+    left: 0;
+    top: 0%;
+}
+
+.twitter {
+    background: #1a9ec4;
+    bottom: 0;
+    left: 25%;
+}
+.facebook2 {
+    background: #155b9d;
+    left: 50%;
+    top: 0%;
+}
+
+.twitter2 {
+    background: #1a9ec4;
+    bottom: 0;
+    left: 25%;
+}
+
+.pinterest {
+    background: #e11a30;
+    left: 50%;
+    top: 0%;
+}
+.behance {
+    background: #3f7aa3;
+    bottom: 0;
+    left: 75%;
+}
+.behance2 {
+    background: #3f7aa3;
+    top: 0%;
+    left: 50%;
+}
+.behance3 {
+    background: #3f7aa3;
+    bottom: 0;
+    left: 75%;
+}
+
+
+.jumbotron {
+    background: url("/image/messironaldo.jpg") bottom center no-repeat;
+    width: 100%;
+    height: 100%;
+    color: honeydew;
+    overflow: hidden;
+    padding-top: 35em;
+    padding-bottom: 12em;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, .4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.navbar {
+
+    color: white;
+
+}
+
+
+
+
+
