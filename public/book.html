@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app" flow-init
+      flow-file-added="!!{png:1,gif:1,jpg:1,jpeg:1}[$file.getExtension()]"
+      flow-files-submitted="$flow.upload()">
 <head>
     <meta charset="UTF-8">
-    <title>Football Kakis</title>
-
-
+    <title>Book game</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-                    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
-             integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="http://cdn.jsdelivr.net/anglular.flow/2.2.0/ng-flow-standalone.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.js"
             integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,800,700italic,600,400italic&subset=latin,greek-ext'
-            rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="style.css">
-
-
+          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="organise.css">
 
 </head>
 <body>
@@ -37,7 +36,6 @@
             <a class="navbar-brand" rel="home" href="/" title="football kakis logo">
                 <img style="max-width:200px; margin-top: -9px;"
                      src="/image/logo.png">
-
             </a>
         </div>
 
@@ -87,24 +85,4 @@
     </div>
 </nav>
 
-<div class="row">
-
-    <div class="col-md-6 col-md-offset-6">
-        <ul class="social">
-            <li class="facebook"><a href="https://www.facebook.com/footballkakis/" target="_blank"><i class="fa fa-facebook fa-3x"></i></a></li>
-            <li class="twitter"><a href="http://twitter.com/"><i class="fa fa-twitter fa-3x"></i></a></li>
-            <li class="pinterest"><a href="http://www.pinterest.com/"><i class="fa fa-pinterest-p fa-3x"></i></a></li>
-            <li class="behance"><a href="https://www.behance.net/"><i class="fa fa-behance fa-3x"></i></a></li>
-        </ul>
-    </div>
-</div>
-
-<div class="jumbotron text-center splash">
-    <h1>Are you ready for new Challenge?</h1>
-    <p class="lead">Don't wait any longer and <a href="https://unsplash.com/photos/iIg4F2IWbTM" target="_blank">Join Games now!</a</p>
-</div>
-
-
-
 </body>
-</html>

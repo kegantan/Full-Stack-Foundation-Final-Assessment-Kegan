@@ -1,0 +1,34 @@
+.social {
+    position: relative;
+    height: 2.5em;
+    width: 13.5em;
+    margin: 50px 450px;
+}
+
+.social li {
+    display: block;
+    height: 4em;
+    line-height: 4em;
+    margin: -2.2em;
+    position: absolute;
+    -webkit-transition: -webkit-transform .7s;
+    -moz-transition: -moz-transform .7s;
+    -ms-transition: -ms-transform .7s;
+    -o-transition: -o-transform .7s;
+    transition: transform .7s;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    text-align: center;
+    width: 4em;
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300,700);
+
+* {
+    box-sizing: border-box;
+    font-family: Quicksand, sans-serif;
+}

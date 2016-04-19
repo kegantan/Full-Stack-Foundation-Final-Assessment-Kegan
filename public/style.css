@@ -101,8 +101,7 @@
     height: 100%;
     color: honeydew;
     overflow: hidden;
-    padding-top: 35em;
-    padding-bottom: 12em;
+    padding-top: 30em;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, .4);
     position: absolute;
     top: 0;
@@ -116,6 +115,9 @@
     color: white;
 
 }
+
+****
+
 
 
 

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" flow-init
+      flow-file-added="!!{png:1,gif:1,jpg:1,jpeg:1}[$file.getExtension()]"
+      flow-files-submitted="$flow.upload()">
+<head>
+    <meta charset="UTF-8">
+    <title>Create game</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+              integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+              integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="http://cdn.jsdelivr.net/anglular.flow/2.2.0/ng-flow-standalone.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.js"
+                integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,800,700italic,600,400italic&subset=latin,greek-ext'
+              rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="organise.css">
+
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+
+            <a class="navbar-brand" rel="home" href="/" title="football kakis logo">
+                <img style="max-width:200px; margin-top: -9px;"
+                     src="/image/logo.png">
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Create Games<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">5 a side </a></li>
+                        <li><a href="#">7 a side </a></li>
+                        <li><a href="#">11 a side </a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Join Games <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Play Now</a></li>
+                        <li><a href="#">Play Near You</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Promotion Games</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Show me ALL !</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#"><i class="fa fa-television"></i> Watch</a></li>
+                <li><a href="#"><i class="fa fa-shopping-cart"></i> Shop</a></li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Login/Sign Up</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-male fa-lg" aria-hidden="true"></i>  Account <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Change Password</a></li>
+                        <li><a href="#">See your ratings</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Log Out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="organise">
+<div class="wrap">
+    <form>
+        <div class="form-header">
+            <h2>Create a Game</h2>
+
+        </div>
+        <div class="form-body">
+            <h4><i class="fa fa-exclamation"></i> Note: You must have a confirmed venue booking and you are required to provide proof in this page</h4>
+            <fieldset>
+                <legend><i class="fa fa-globe"></i> Venue Information</legend>
+                    <div>
+                        <label for="location">Enter Venue Location</label>
+                        <input type="text" name="location" id="location" placeholder=" Venue Location">
+                    </div>
+                    <label>Add Venue Image</label>
+                    <div id="upload-area">
+                        <form action="/playground/ajax_upload" id="newHotnessForm">
+                            <input type="file" size="20" id="imageUpload" class=" ">
+                        </form>
+                    </div>
+                    <div>
+                        <label for="pitch">Enter Pitch/Court info </label>
+                        <input type="text" name="location" id="pitch" placeholder=" Pitch / Court information (e.g. pitch 3)">
+                    </div>
+                <label>Select only one option</label>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio"> 5 A SIDE (10-15 players recommended)
+                </label><br>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio"> 7 A SIDE (14-21 players recommended)
+                </label><br>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio"> 11 A SIDE (22-33 players recommended)
+                </label><br>
+            </fieldset>
+            <fieldset>
+                <legend><i class="fa fa-gamepad"></i> Game Information</legend>
+                <label for="date">Date and Time</label>
+
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4">
+                        <div class="form-group">
+                            <input type="text" name="date" id="date" class="form-control " placeholder="Date (e.g. 2016/04/20)" tabindex="1">
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4">
+                        <div class="form-group">
+                            <input type="text" name="start_time" id="start_time" class="form-control " placeholder="Start Time (e.g. 19:00)" tabindex="2">
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4">
+                        <div class="form-group">
+                            <input type="text" name="end_time" id="end_time" class="form-control" placeholder="End Time (e.g. 21:00)" tabindex="2">
+                        </div>
+                    </div>
+                </div>
+                <label for="numplayer">Min and Max number of Players allowed</label>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="form-group">
+                        <input type="text" name="numplayer" id="numplayer" class="form-control " placeholder="State minimum number of Players" tabindex="2">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="form-group">
+                        <input type="text" name="maxplayer" id="maxplayer" class="form-control" placeholder="State maximum number of Players" tabindex="2">
+                    </div>
+                </div>
+                <label for="price">Price per Booking</label>
+                <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-addon">.00</span>
+                </div>
+                <label>Show proof of venue booking (Note: This image will be shown to all in game listing)</label>
+                <div id="venue">
+                    <form action="/playground/ajax_upload" >
+                        <input type="file" size="20" id="venuebooking" class=" ">
+                    </form>
+                </div>
+            </fieldset>
+
+        </div>
+        <div class="form-footer">
+            <input id="preview" type="submit" value="Preview">
+            <input id="goback"  type="submit" value="Go back to Home">
+        </div>
+    </form>
+</div>
+</div>
+
+
+</body>
+</html>
