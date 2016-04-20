@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="app" flow-init
-      flow-file-added="!!{png:1,gif:1,jpg:1,jpeg:1}[$file.getExtension()]"
-      flow-files-submitted="$flow.upload()">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Create game</title>
@@ -43,11 +41,11 @@
             <ul class="nav navbar-nav">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        Create Games<span class="caret"></span></a>
+                        Organise Games<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">5 a side </a></li>
-                        <li><a href="#">7 a side </a></li>
-                        <li><a href="#">11 a side </a></li>
+                        <li><a href="/organise.html">5 a side </a></li>
+                        <li><a href="/organise.html">7 a side </a></li>
+                        <li><a href="/organise.html">11 a side </a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -65,7 +63,6 @@
 
                 <li><a href="#"><i class="fa fa-television"></i> Watch</a></li>
                 <li><a href="#"><i class="fa fa-shopping-cart"></i> Shop</a></li>
-
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
@@ -89,11 +86,11 @@
 <div class="wrap">
     <form>
         <div class="form-header">
-            <h2>Create a Game</h2>
+            <h2>Create Game</h2>
 
         </div>
         <div class="form-body">
-            <h4><i class="fa fa-exclamation"></i> Note: You must have a confirmed venue booking and you are required to provide proof in this page</h4>
+            <h4><i class="fa fa-exclamation"></i> Note: You must have a venue booking and you are required to provide proof in this page</h4>
             <fieldset>
                 <legend><i class="fa fa-globe"></i> Venue Information</legend>
                     <div>
@@ -169,8 +166,8 @@
 
         </div>
         <div class="form-footer">
-            <input id="preview" type="submit" value="Preview">
-            <input id="goback"  type="submit" value="Go back to Home">
+            <input id="preview" type="submit" value="Submit">
+            <input id="goback"  type="submit" value="Go back to Home" href="/index.html">
         </div>
     </form>
 </div>
