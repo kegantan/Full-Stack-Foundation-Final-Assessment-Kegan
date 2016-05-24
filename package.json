@@ -15,9 +15,15 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/163219/football_kakis#readme",
   "dependencies": {
-    "body-parser": "^1.15.0",
+    "body-parser": "^1.15.1",
     "bower": "^1.7.9",
+    "cookie-parser": "^1.4.2",
     "express": "^4.13.4",
-    "express-handlebars": "^3.0.0"
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.13.0",
+    "jquery": "^2.2.3",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-local": "^1.0.0"
   }
 }
